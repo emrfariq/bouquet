@@ -44,16 +44,16 @@ def _env_flag(name, default):
     return value.strip().lower() not in ("0", "false", "no", "off", "")
 
 
-TO_NAME = _env_text("BOUQUET_TO", "A")  
-FROM_NAME = _env_text("BOUQUET_FROM", "Red Ivan Clay")
-SIGNATURE = _env_text("BOUQUET_SIGNATURE", "this is what happens when i hyperfixate/get bored lmao by " + FROM_NAME + ",,,")
+TO_NAME = _env_text("BOUQUET_TO", "Bibiy")
+FROM_NAME = _env_text("BOUQUET_FROM", "Emir")
+SIGNATURE = _env_text("BOUQUET_SIGNATURE", "dirangkai pelan-pelan, khusus buat kamu — " + FROM_NAME + " ♥")
 
 
 MESSAGES = [
-    "If I had a single flower for every time I think about you, I could walk forever in my garden.",
-    "A flower cannot blossom without sunshine, and a man cannot live without love.",
-    "roses are #ff005f, violets are #af87ff, i built this whole bouquet in code because i was so very bored,,, argh",
-    "no water, no sunlight, just a little python",
+    "Bibiy, kalau setiap kali aku mikirin kamu tumbuh satu bunga, mungkin dunia udah jadi taman ungu sekarang.",
+    "Buket ini nggak akan pernah layu, sama kayak sayangku ke kamu.",
+    "Aku pilih ungu karena itu warna favoritmu. Dan aku pilih kamu karena kamu favoritku.",
+    "Terima kasih udah jadi bagian paling indah dari hari-hariku.",
     "",
 ]
 if os.getenv("BOUQUET_MESSAGE"):
@@ -72,43 +72,44 @@ TYPE_CPS = 28.0
 HEART = "\u2665"
 
 
+# warna ungu untuk Bibiy (sama dengan bouquet.js)
 DAISY_WHITE = [244, 248, 251, 254, 255, 231]
 ASTER = [54, 97, 103, 140, 183, 189]
-ROSE_RED = [52, 88, 125, 161, 197, 204, 211]
-ROSE_BLUSH = [95, 132, 175, 181, 217, 224, 231]
-ROSE_PEACH = [130, 166, 172, 209, 215, 216, 223]
+ROSE_VIOLET = [53, 91, 92, 128, 134, 171, 177]
+ROSE_PLUM = [53, 90, 127, 133, 170, 176, 182]
+ROSE_DEEP = [53, 54, 55, 92, 98, 135, 141]
+ROSE_LILAC = [96, 97, 140, 146, 183, 189, 231]
 ROSE_LAV = [54, 97, 103, 140, 147, 183, 189]
-ROSE_CORAL = [88, 124, 160, 166, 203, 209, 216]
-SUN_PETAL = [130, 172, 178, 214, 220, 227]
+SUN_PETAL = [54, 91, 98, 135, 141, 183]
 SUN_CENTER = [52, 58, 94, 94, 130, 136]
 GOLD_CENTER = [94, 136, 178, 214, 220]
-SAKURA_PAL = [132, 168, 175, 211, 218, 224, 231]
-SAKURA_CENTER = [89, 125, 162, 198, 223]
-LILY_PINK = [89, 125, 161, 205, 211, 218, 225]
-LILY_WHITE = [138, 181, 187, 224, 230, 231]
+SAKURA_PAL = [96, 133, 139, 176, 182, 219, 225]
+SAKURA_CENTER = [53, 90, 127, 170, 213]
+LILY_LILAC = [96, 133, 176, 182, 219, 225]
+LILY_WHITE = [103, 146, 189, 225, 231, 231]
 LILY_CENTER = [100, 136, 172, 214, 220]
-TULIP_RED = [52, 88, 124, 160, 196, 203]
-TULIP_PINK = [132, 168, 205, 211, 218, 225]
-TULIP_YELLOW = [136, 178, 214, 220, 226, 229]
 TULIP_PURPLE = [54, 91, 97, 134, 140, 183]
-BLUE = [61, 68, 69, 75, 111, 117, 153]
+TULIP_DEEP = [53, 54, 55, 92, 98, 141]
+TULIP_LILAC = [97, 140, 141, 183, 189, 225]
+TULIP_WHITE = [103, 146, 189, 254, 255, 231]
+BLUE = [55, 61, 62, 99, 105, 141, 147]
 LAVENDER = [54, 55, 97, 98, 134, 140, 183]
 GREENS = [22, 28, 28, 34, 35, 71, 77, 114]
 EUCALYPTUS = [22, 28, 29, 35, 65, 72, 107, 108, 114]
 CORE_GREEN = [22, 22, 23, 28, 29, 34]
-PAPER_PINK = [95, 132, 168, 174, 211, 217, 224]
+PAPER_PINK = [54, 91, 97, 134, 140, 177, 183]
 PAPER_LAV = [97, 103, 140, 146, 183, 189, 225]
-PAPER_CREAM = [101, 137, 144, 180, 187, 223, 230, 231]
-TISSUE = [138, 175, 181, 218, 224, 225, 231]
+PAPER_CREAM = [103, 146, 182, 189, 225, 231]
+TISSUE = [96, 139, 176, 182, 219, 225, 231]
 TISSUE_LAV = [97, 103, 140, 147, 183, 189, 225]
-RIBBON = [52, 88, 124, 160, 197, 204, 217, 231]
-HEART_PRINT = [89, 125, 161, 197]
+RIBBON = [53, 54, 91, 92, 128, 134, 177, 219]
+HEART_PRINT = [90, 127, 170, 213]
 TWINE = [94, 137, 180, 223]
 TAG_PAL = [137, 180, 187, 223, 230, 231]
 CUT_END = [151, 187, 230]
-HEART_COLORS = [161, 197, 204, 205, 211, 218]
-PETAL_COLORS = [175, 211, 217, 218, 224, 225]
-MSG_COLORS = [161, 168, 205, 211, 218, 225, 218, 211, 205, 168]
+HEART_COLORS = [134, 135, 170, 171, 177, 213]
+PETAL_COLORS = [140, 141, 176, 177, 182, 183, 219]
+MSG_COLORS = [134, 135, 141, 177, 183, 189, 183, 177, 141, 135]
 
 SHADE = ".:-=+*%@"
 PETAL_SHADE = ".:+*#%"
@@ -266,14 +267,15 @@ def build_scene(density=1.0):
 
  
     wish = []
-    for pal in (ROSE_RED, ROSE_BLUSH, ROSE_PEACH, ROSE_LAV, ROSE_CORAL, ROSE_BLUSH, ROSE_RED, ROSE_PEACH):
+    for pal in (ROSE_VIOLET, ROSE_LAV, ROSE_PLUM, ROSE_DEEP, ROSE_LILAC, ROSE_VIOLET, ROSE_PLUM, ROSE_LAV):
         wish.append((ROSE, pal, 0.175))
     wish += [(SUN, SUN_PETAL, 0.21), (SUN, SUN_PETAL, 0.20)]
-    for pal in (LILY_PINK, LILY_WHITE, LILY_PINK):
+    for pal in (LILY_LILAC, LILY_WHITE, LILY_LILAC):
         wish.append((LILY, pal, 0.185))
     wish += [(SAKURA, SAKURA_PAL, 0.135)] * 5
-    wish += [(DAISY, DAISY_WHITE, 0.125)] * 4 + [(DAISY, ASTER, 0.125)]
-    for pal in (TULIP_RED, TULIP_PINK, TULIP_YELLOW, TULIP_PURPLE):
+    for pal in (DAISY_WHITE, ASTER, DAISY_WHITE, ASTER, DAISY_WHITE):
+        wish.append((DAISY, pal, 0.125))
+    for pal in (TULIP_PURPLE, TULIP_DEEP, TULIP_LILAC, TULIP_WHITE):
         wish.append((TULIP, pal, 0.13))
     wish += [(HYDRA, BLUE, 0.11)] * 3
 
@@ -886,9 +888,9 @@ def render(scene, t, ang, cols, rows, view_rows, scale, hearts, petals, msg, hin
             elif tw > 0.4:
                 plot(col, row, zt, "+", 225)
             elif tw > 0.0:
-                plot(col, row, zt, "\u00b7", 218)
+                plot(col, row, zt, "\u00b7", 183)
         for rad, y0, omega, phase in scene.flies:
-            for k, (chh, colr) in enumerate((("*", 229), ("+", 223), ("\u00b7", 218), ("\u00b7", 175))):
+            for k, (chh, colr) in enumerate((("*", 229), ("+", 223), ("\u00b7", 183), ("\u00b7", 140))):
                 a = phase + t * omega - k * 0.10 * (1 if omega > 0 else -1)
                 yy = y0 + 0.08 * math.sin(t * 0.9 + phase)
                 col, row, zt = project(rad * math.cos(a), yy, rad * math.sin(a))
@@ -897,7 +899,7 @@ def render(scene, t, ang, cols, rows, view_rows, scale, hearts, petals, msg, hin
 
     shift = int(t * 8)
     if TO_NAME:
-        label = "for " + TO_NAME
+        label = "untuk " + TO_NAME
         st0 = max(0, (cols - len(label)) // 2)
         for i, ch in enumerate(label):
             if st0 + i < cols and ch != " ":
@@ -928,7 +930,7 @@ def render(scene, t, ang, cols, rows, view_rows, scale, hearts, petals, msg, hin
                     colors[r][c] = MSG_COLORS[(idx + shift) % len(MSG_COLORS)]
                 elif idx == hi and typing:
                     chars[r][c] = "_"
-                    colors[r][c] = 211
+                    colors[r][c] = 177
             idx += 1
 
     sig = SIGNATURE
@@ -1134,7 +1136,7 @@ def main():
       
         sys.stdout.write(RESET + "\033[?25h\033[?1049l")
         sys.stdout.flush()
-        print("\033[38;5;205m" + HEART + "\033[0m  thanks for watching it bloom")
+        print("\033[38;5;177m" + HEART + "\033[0m  makasih udah lihat buketnya mekar")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background: #0b0710;
+  color: #c9b8e8;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+body {
+  font-family: "Cascadia Mono", Consolas, Menlo, "DejaVu Sans Mono", ui-monospace, monospace;
+  background: radial-gradient(ellipse at 50% 40%, #1a0f26 0%, #0b0710 65%);
+}
+
+main {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: max(10px, env(safe-area-inset-top)) 12px max(10px, env(safe-area-inset-bottom));
+}
+
+header {
+  position: relative;
+  text-align: center;
+  min-height: 1.6em;
+}
+
+#to {
+  font-size: clamp(15px, 2.4vw, 22px);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+#hint {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  font-size: 11px;
+  color: #6c6c6c;
+  transition: opacity 0.4s;
+}
+
+#stage {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding-top: 6px;
+}
+
+#message {
+  font-size: clamp(14px, 2.1vw, 19px);
+  line-height: 1.5;
+  min-height: 4.5em; /* tiga baris, supaya buket tidak naik turun */
+  max-width: 46em;
+  margin: 0 auto;
+  white-space: pre-wrap;
+}
+
+#message .ghost {
+  color: transparent;
+}
+
+#signature {
+  margin-top: 8px;
+  font-size: clamp(11px, 1.5vw, 13px);
+  color: #9d8fbd;
+}
+
+@media (max-width: 600px) {
+  #hint {
+    position: static;
+    margin-bottom: 4px;
+  }
+}
